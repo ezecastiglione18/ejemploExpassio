@@ -1,0 +1,15 @@
+<mvc:View controllerName="DevMuestraDeDatos.controller.Modify" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<Page title="Modificar atributos del empleado">
+		<content>
+			<DatePicker id="inputFecha" placeholder="Elija una nueva fecha" change="handleChange" class="sapUiSmallMarginBottom"/>
+			<Input placeholder="Ingrese una nueva denominacion" required="true" id="inputDenom1"/>
+			<Input placeholder="Ingrese otra denominacion" required="true" id="inputDenom2"/>
+			<Input id="inputEstado" placeholder="Ingrese un nuevo estado" required="true"/>
+			<Input id="inputTipo" placeholder="Ingrese un nuevo tipo" required="true"/>
+			<Input placeholder="Ingrese un nuevo numero de CUIT" required="true" id="inputCUIT" type="Number"/>
+			<Input placeholder="Ingrese una nueva cantidad que adeuda" required="true" id="inputAdeuda" type="Number"/>
+			<Button text="Modificar campos" press="modificarCampos"/>
+		</content>
+	</Page>
+</mvc:View>

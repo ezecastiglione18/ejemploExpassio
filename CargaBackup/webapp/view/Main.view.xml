@@ -1,0 +1,69 @@
+<mvc:View controllerName="DevCargaDatos.controller.Main" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page id="oPage1" title="Empleados">
+				<content>
+					<Input placeholder="Ingrese un numero de ID" required="true" id="inputID" type="Number"/>
+					<DatePicker id="inputFecha" placeholder="Elija una fecha" change="handleChange" class="sapUiSmallMarginBottom"/>
+					<Input placeholder="Ingrese una denominacion" required="true" id="inputDenom1"/>
+					<Input placeholder="Ingrese otra denominacion" required="true" id="inputDenom2"/>
+					<Input id="inputEstado" placeholder="Ingrese un estado" required="true"/>
+					<Input id="inputTipo" placeholder="Ingrese un tipo" required="true"/>
+					<Input placeholder="Ingrese un numero de CUIT" required="true" id="inputCUIT" type="Number"/>
+					<Input placeholder="Ingrese una cantidad que adeuda" required="true" id="inputAdeuda" type="Number"/>
+					<Button text="Grabar entrada" press="guardarEntrada"/>
+					<Button text="Borrar fila" press="borrarFila"/>
+					<Table id="tabla1" items="{path: 'modeloTabla>/'}" mode="SingleSelectMaster" selectionChange="seleccionFila">
+						<columns>
+							<Column>
+								<Text text="Id"></Text>
+							</Column>
+							<Column>
+								<Text text="Fecha"></Text>
+							</Column>
+							<Column>
+								<Text text="Denominacion 1"></Text>
+							</Column>
+							<Column>
+								<Text text="Denominacion 2"></Text>
+							</Column>
+							<Column>
+								<Text text="Estado"></Text>
+							</Column>
+							<Column>
+								<Text text="Tipo"></Text>
+							</Column>
+							<Column>
+								<Text text="CUIT"></Text>
+							</Column>
+							<Column>
+								<Text text="Adeudado"></Text>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem vAlign="Middle">
+								<cells>
+									<Text text="{modeloTabla>ID}"/>
+									<Text text="{modeloTabla>Fecha}"/>
+									<Text text="{modeloTabla>Denominacion1}"/>
+									<Text text="{modeloTabla>Denominacion2}"/>
+									<Text text="{modeloTabla>Estado}"/>
+									<Text text="{modeloTabla>Tipo}"/>
+									<Text text="{modeloTabla>CUIT}"/>
+									<Text text="{modeloTabla>Adeudado}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+					<RadioButtonGroup id="rbg1">
+						<RadioButton id="rb1" text="Formato .txt"/>
+						<RadioButton id="rb2" text="Formato .csv"/>
+						<RadioButton id="rb3" text="Formato .xls"/>
+					</RadioButtonGroup>
+					<Button text="Guardar tabla" press="guardarTabla"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

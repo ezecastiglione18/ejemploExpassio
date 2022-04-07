@@ -1,0 +1,18 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="EjercicioLicencias.controller.ListaLicencias"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Lista de las licencias en Argentina">
+		<content>
+			<ObjectHeader
+				binding="{modeloUser>/}" 
+				title="Hola {modeloUser>Nombre}">
+				<ObjectAttribute text="{modeloUser>Nombre} {modeloUser>Apellido} x Fecha de creacion: {modeloUser>FechaCreacion} x Email: {modeloUser>Email}" />
+			</ObjectHeader>
+			<List class="sapUiResponsiveMargin" width="auto" items="{licencias>/Licencias}" id="listaLicencias">
+				<items>
+					<ObjectListItem title="{licencias>Codigo} : {licencias>Descripcion}" type="Navigation"
+					press="verDetalle"/>
+				</items>
+			</List>
+		</content>
+	</Page>
+</mvc:View>

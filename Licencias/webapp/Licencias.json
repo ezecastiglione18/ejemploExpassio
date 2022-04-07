@@ -1,0 +1,92 @@
+{
+	"Licencias":[
+		{
+			"Codigo":"A.1.1",
+			"Descripcion":"Ciclomotores hasta 50cc o 4kw"
+		},
+		{
+			"Codigo":"A.1.2",
+			"Descripcion":"Motocicletas hasta 150cc u 11kw"
+		},
+		{
+			"Codigo":"A.1.3",
+			"Descripcion":"Motocicletas hasta 300cc o 20kw"
+		},
+		{
+			"Codigo":"A.1.4",
+			"Descripcion":"Motocicletas de más de 300cc o 20kw"
+		},
+		{
+			"Codigo":"A.2.1",
+			"Descripcion":"Triciclos y cuatriciclos sin cabina hasta 300cc o 20kw"
+		},
+		{
+			"Codigo":"A.2.2",
+			"Descripcion":"Triciclos y cuatriciclos sin cabina de más de 300cc o 20kw"
+		},
+		{
+			"Codigo":"A.3",
+			"Descripcion":"Triciclos y cuatriciclos cabinados de cualquier cilindrada o kilowatts con volante direccional"
+		},
+		{
+			"Codigo":"B.1",
+			"Descripcion":"Automóviles, utilitarios, camionetas, vans de uso privado y casas rodantes hasta 3500 kg"
+		},
+		{
+			"Codigo":"B.2",
+			"Descripcion":"Automóviles, utilitarios, camionetas, vans de uso privado y casas rodantes hasta 3.500 kg con un acoplado de hasta 750 kg"
+		},
+		{
+			"Codigo":"C.1",
+			"Descripcion":"Camiones sin acoplado o casas rodantes motorizadas hasta 12.000 kg"
+		},
+		{
+			"Codigo":"C.2",
+			"Descripcion":"Camiones sin acoplado o casas rodantes motorizadas hasta 24.000 kg"
+		},
+		{
+			"Codigo":"C.3",
+			"Descripcion":"Camiones sin acoplado o casas rodantes motorizadas de mas de 24.000 kg"
+		},
+		{
+			"Codigo":"D.1",
+			"Descripcion":"Transporte de pasajeros de hasta 8 plazas"
+		},
+		{
+			"Codigo":"D.2",
+			"Descripcion":"Transporte de pasajeros de 8 hasta 20 plazas"
+		},
+		{
+			"Codigo":"D.3",
+			"Descripcion":"Transporte de pasajeros de más de 20 plazas"
+		},
+		{
+			"Codigo":"D.4",
+			"Descripcion":"Servicio de urgencia, emergencia y similares"
+		},
+		{
+			"Codigo":"E.1",
+			"Descripcion":"Vehículos con uno o más remolques y/o articulaciones"
+		},
+		{
+			"Codigo":"E.2",
+			"Descripcion":"Maquinaria especial no agrícola"
+		},
+		{
+			"Codigo":"F",
+			"Descripcion":"Adaptación técnica vehicular"
+		},
+		{
+			"Codigo":"G.1",
+			"Descripcion":"Tractores agrícolas"
+		},
+		{
+			"Codigo":"G.2",
+			"Descripcion":"Maquinaria especial agrícola"
+		},
+		{
+			"Codigo":"G.3",
+			"Descripcion":"Tren agrícola"
+		}
+		]
+}

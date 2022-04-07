@@ -1,0 +1,50 @@
+<mvc:View controllerName="DevTablaConTXT.controller.Main" xmlns:l="sap.ui.layout" xmlns:u="sap.ui.unified" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" class="viewPadding">
+	<l:VerticalLayout>
+		<u:FileUploader id="fileUploader" name="myFileUpload" uploadUrl="upload/" width="1000px" tooltip="Upload your file to the local server"
+			uploadComplete="handleUploadComplete" fileType="TXT"/>
+		<Button text="Procesar" press="handleUploadPress"/>
+	</l:VerticalLayout>
+	<Table id="tabla1" items="{ path: 'modeloTabla>/' }">
+		<columns>
+			<Column>
+				<Text text="Id"></Text>
+			</Column>
+			<Column>
+				<Text text="Fecha"></Text>
+			</Column>
+			<Column>
+				<Text text="Denominacion 1"></Text>
+			</Column>
+			<Column>
+				<Text text="Denominacion 2"></Text>
+			</Column>
+			<Column>
+				<Text text="Estado"></Text>
+			</Column>
+			<Column>
+				<Text text="Tipo"></Text>
+			</Column>
+			<Column>
+				<Text text="CUIT"></Text>
+			</Column>
+			<Column>
+				<Text text="Adeudado"></Text>
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem vAlign="Middle">
+				<cells>
+					<Text text="{modeloTabla>ID}"/>
+					<Text text="{modeloTabla>Fecha}"/>
+					<Text text="{modeloTabla>Denominacion1}"/>
+					<Text text="{modeloTabla>Denominacion2}"/>
+					<Text text="{modeloTabla>Estado}"/>
+					<Text text="{modeloTabla>Tipo}"/>
+					<Text text="{modeloTabla>CUIT}"/>
+					<Text text="{modeloTabla>Adeudado}"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</mvc:View>

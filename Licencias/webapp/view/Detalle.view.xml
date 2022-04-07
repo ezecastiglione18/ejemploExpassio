@@ -1,0 +1,15 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="EjercicioLicencias.controller.Detalle"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title" showNavButton="true" navButtonPress="navegarParaAtras">
+		<content>
+			<ObjectHeader title="Codigo de licencia: {licencias>Codigo} - {licencias>Descripcion}"/>
+			<DatePicker id="inputFechaOtorgamiento" placeholder="Elija una fecha de otorgamiento (obligatorio)" change="handleChange"
+				class="sapUiSmallMarginBottom"/>
+			<DatePicker id="inputFechaVencimiento" placeholder="Elija una fecha de vencimiento (obligatorio)" change="handleChange"
+				class="sapUiSmallMarginBottom"/>
+			<Input placeholder="Comentarios (opcional - max 50 caracteres)" id="inputComentarios" maxLength="50"/>
+			<Button text="Grabar" press="grabarContenido"/>
+			<Button text="Reiniciar" press="reiniciar"/>
+		</content>
+	</Page>
+</mvc:View>
